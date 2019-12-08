@@ -1,11 +1,11 @@
-async function onDragEnd(event) {
+async function onClickNavigator(event) {
   console.log('Send to background')
   browser.runtime.sendMessage("Do something");
 }
 
 let image = document.createElement('img')
 image.setAttribute('src', 'https://icon-library.net/images/icon-circle-png/icon-circle-png-29.jpg')
-image.style.cssText = 'width: 30px; height: 30px;'
+image.style.cssText = 'width: 15px; height: 15px; opacity: 0.3'
 image.setAttribute('draggable', 'true')
 
 let navigationDiv = document.createElement('div')
@@ -15,4 +15,4 @@ navigationDiv.appendChild(image)
 
 document.querySelector('body').appendChild(navigationDiv)
 
-document.querySelector('.tab-navigator img').addEventListener('dragend', onDragEnd, false)
+document.querySelector('.tab-navigator img').addEventListener('click', onClickNavigator)
