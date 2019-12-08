@@ -1,0 +1,30 @@
+{
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Firefox Android Navigator",
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "32": "icons/navigation-32.png",
+      "48": "icons/navigation-48.png"
+    }
+  },
+  "background": {
+    "scripts": ["background/background.js"]
+  },
+  "description": "For easy navigation of tabs on Android",
+  "homepage_url": "https://gitlab.com/sync-tab/sync-tabs-extension",
+  "manifest_version": 2,
+  "name": "Firefox Android Navigator",
+  "permissions": [
+    "tabs", "<all_urls>"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": [
+      "content_script/index.js"
+    ]
+  }],
+  "version": "1.0"
+}
