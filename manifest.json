@@ -26,7 +26,7 @@
       "content_script/index.js"
     ]
   }],
-  "version": "1.0.2",
+  "version": "1.0.4",
   "browser_specific_settings": {
     "gecko": {
       "id": "{5a4f88a5-8a2b-476a-b4ab-14c138543629}"
