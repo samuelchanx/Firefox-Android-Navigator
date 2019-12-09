@@ -8,3 +8,7 @@
 ## How to run locally on desktop for testing
 
 - `web-ext run --firefox=/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox-bin`
+
+## Release
+
+- Available on [Firefox Addon](https://addons.mozilla.org/en-GB/firefox/addon/android-tabs-navigator/)
